@@ -1,51 +1,63 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<head>
+	<title>Pixel3d</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="debug"></div>
+		<form id="text3dwrapper" name="mform">
+			<div id="textmode">
+				Enter text: <input id="text3d" value="bkc"></input>
+			</div>
+			<div id="pixelmode">
+				<input type="checkbox" name="pixels" id="c0" checked/><label for="c0"></label>
+				<input type="checkbox" name="pixels" id="c1" checked/><label for="c1"></label>
+				<input type="checkbox" name="pixels" id="c2" checked/><label for="c2"></label>
+				<input type="checkbox" name="pixels" id="c3" /><label for="c3"></label><br/>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+				<input type="checkbox" name="pixels" id="c4" checked/><label for="c4"></label>
+				<input type="checkbox" name="pixels" id="c5" /><label for="c5"></label>
+				<input type="checkbox" name="pixels" id="c6" /><label for="c6"></label>
+				<input type="checkbox" name="pixels" id="c7" checked/><label for="c7"></label><br/>
 
-    <title>Pixel3d by chaitan94</title>
-  </head>
+				<input type="checkbox" name="pixels" id="c8" checked/><label for="c8"></label>
+				<input type="checkbox" name="pixels" id="c9" /><label for="c9"></label>
+				<input type="checkbox" name="pixels" id="c10" /><label for="c10"></label>
+				<input type="checkbox" name="pixels" id="c11" checked/><label for="c11"></label><br/>
 
-  <body>
+				<input type="checkbox" name="pixels" id="c12" checked/><label for="c12"></label>
+				<input type="checkbox" name="pixels" id="c13" checked/><label for="c13"></label>
+				<input type="checkbox" name="pixels" id="c14" checked/><label for="c14"></label>
+				<input type="checkbox" name="pixels" id="c15" /><label for="c15"></label><br/>
 
-    <header>
-      <div class="container">
-        <h1>Pixel3d</h1>
-        <h2>a webGL experiment</h2>
+				<input type="checkbox" name="pixels" id="c16" checked/><label for="c16"></label>
+				<input type="checkbox" name="pixels" id="c17" /><label for="c17"></label>
+				<input type="checkbox" name="pixels" id="c18" /><label for="c18"></label>
+				<input type="checkbox" name="pixels" id="c19" checked/><label for="c19"></label><br/>
 
-        <section id="downloads">
-          <a href="https://github.com/chaitan94/pixel3d/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/chaitan94/pixel3d/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/chaitan94/pixel3d" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+				<input type="checkbox" name="pixels" id="c20" checked/><label for="c20"></label>
+				<input type="checkbox" name="pixels" id="c21" /><label for="c21"></label>
+				<input type="checkbox" name="pixels" id="c22" /><label for="c22"></label>
+				<input type="checkbox" name="pixels" id="c23" checked/><label for="c23"></label><br/>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a name="pixel3d" class="anchor" href="#pixel3d"><span class="octicon octicon-link"></span></a>Pixel3D</h1>
-
-<p>Pixel3D is a webGL experiment where user input is take in text form or in raw 4x7 pixel grid, and is generated and displayed in 3D.</p>
-
-<h2>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
-
-<p>webGL supporting browser</p>
-
-<h2>
-<a name="thanks" class="anchor" href="#thanks"><span class="octicon octicon-link"></span></a>Thanks</h2>
-
-<p>Three.js
-jQuery</p>
-      </section>
-    </div>
-
-    
-  </body>
+				<input type="checkbox" name="pixels" id="c24" checked/><label for="c24"></label>
+				<input type="checkbox" name="pixels" id="c25" checked/><label for="c25"></label>
+				<input type="checkbox" name="pixels" id="c26" checked/><label for="c26"></label>
+				<input type="checkbox" name="pixels" id="c27" /><label for="c27"></label><br/>
+			</div>
+			<div id="modediv">
+				<input type="radio" name="mode" value="Text mode" id="rtextmode" checked></input><label for="rtextmode">Text mode</label>
+				<input type="radio" name="mode" value="Pixel mode" id="rpixelmode"></input><label for="rpixelmode">Pixel mode</label>
+			</div>
+		</form>
+		<div id="instr">Use mouse to move camera, scroll to zoom in/out.</div>
+	</div>
+	<script type="text/javascript" src="js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="js/gui.js"></script>
+	<script type="text/javascript" src="js/vendor/three.min.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+</body>
 </html>
